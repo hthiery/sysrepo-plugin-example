@@ -1,0 +1,29 @@
+{
+  "ieee802-dot1q-bridge:bridges": {
+    "bridge": [
+      {
+        "name": "bridge0",
+        "address": "00-A0-A5-5C-6D-B0",
+        "bridge-type": "ieee802-dot1q-bridge:two-port-mac-relay-bridge",
+        "component": [
+          {
+            "name": "bridge0",
+            "type": "ieee802-dot1q-bridge:c-vlan-component",
+            "bridge-vlan": {
+              "vlan": [
+                {
+                  "vid": 1,
+                  "name": "default"
+                },
+                {
+                  "vid": 2,
+                  "name": "VLAN2"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

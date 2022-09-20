@@ -1,0 +1,24 @@
+{
+  "ietf-interfaces:interfaces": {
+    "interface": [
+      {
+        "name": "Gi 1/3",
+        "type": "iana-if-type:ethernetCsmacd",
+        "ieee802-dot1q-sched:gate-parameters": {
+          "gate-enabled": true,
+          "admin-control-list-length": 4,
+          "admin-control-list": [
+            {
+              "index": 0,
+              "operation-name": "ieee802-dot1q-sched:set-gate-states",
+              "sgs-params": {
+                "gate-states-value": 3,
+                "time-interval-value": 10000
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
